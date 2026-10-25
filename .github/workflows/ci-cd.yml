@@ -20,7 +20,7 @@ jobs:
 
     publish-image:
         needs: build-test
-        if: github.ref == 'refs/head/main' && github.event_name == 'push'
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         runs-on: ubuntu-latest
         permissions:
             contents: read
